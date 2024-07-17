@@ -34,7 +34,7 @@
     gap: 4em;
 }
 
-.outputs div {
+.outputs .your-results {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,6 +47,12 @@
     border-radius: 1em;
     display: flex;
     align-items: center;
+}
+
+.other-results {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 form {

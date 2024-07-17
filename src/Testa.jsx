@@ -29,7 +29,7 @@ function Testa() {
   };
 
   return (
-    <div>
+    <div className='Testa'>
       <main>
         <div className="inputs">
           <form onSubmit={handleSubmit}>
@@ -119,7 +119,7 @@ function Testa() {
         </div>
         <div className="outputs">
           <h1>Results</h1>
-          <div>
+          <div className='your-results'>
             <div className="data-result">
               <h2>FFMI</h2>
               <h3>{submittedData ? `${(calculateFFMI(submittedData.weight, submittedData.height, submittedData.bodyFatPercentage)).toFixed(2)}` : ''}</h3>
@@ -153,7 +153,12 @@ function Testa() {
               <h3>{submittedData ? `${calculateArmsCalves(submittedData.wristSize)} cm` : ''}</h3>
             </div>
           </div>
+          <div className='other-results'>
+            <h1>Compare with others</h1>
+            <button type="submit" className="btn-result">More Results</button>
+          </div>
         </div>
+        
       </main>
     </div>
   );

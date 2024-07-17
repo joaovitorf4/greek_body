@@ -30,7 +30,7 @@
   z-index: -2;
 }
 
-main {
+.Main main {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -102,5 +102,9 @@ strong {
 
   .start {
     padding-bottom: 4em;
+  }
+
+  button {
+    font-size: 2em;
   }
 }

@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Greek Freak';
+    src: url("../src/fonts/Greek-Freak.ttf");
+}
+  
+body {
+    font-family: 'YourFontName', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 0px;
+    height: 8vh;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 999;
+    position: relative;
+}
+
+header h1 {
+    z-index: 999;
+    font-family: 'Greek Freak';
+    font-size: 32px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  

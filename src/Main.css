@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+/* .class-img {
+  height: 92vh;
+  width: 616px;
+} */
+
+.start {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 2em;
+}
+
+.description h1 {
+  font-family: "Marcellus SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+}
+
+.Main {
+  max-height: 92vh;
+}
+
+.Main > * {
+  max-height: 92vh;
+  z-index: -2;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4em;
+}
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  z-index: -1;
+  /* position: fixed; */
+  bottom: 999;
+  height: 92vh;
+}
+
+button {
+  border-radius: 24px;
+  /* width: 25vw;
+  height: 6.5vw; */
+  border: none;
+  background-color: #D9D9D9;
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.5em;
+  font-style: normal;
+  transition: background-color 0.5s, color 0.5s;
+  padding: .5em 1em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #616161;
+  color: white;
+}
+
+strong {
+  color: gold;
+  font-family: "Marcellus SC", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and (max-aspect-ratio: 14/9) {
+  img {
+    position: relative;
+    border-radius: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .Main {
+    padding-top: 4em;
+  }
+
+  img {
+    height: 40vh;
+    width: none;
+  }
+
+  .start * {
+    text-align: center;
+  }
+
+  .start {
+    padding-bottom: 4em;
+  }
+}

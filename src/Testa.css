@@ -47,12 +47,23 @@
     border-radius: 1em;
     display: flex;
     align-items: center;
+    gap: .5em;
 }
 
 .other-results {
     display: flex;
     flex-direction: column;
     gap: 2em;
+}
+
+.Testa a {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+.Testa a:hover {
+    color: white;
 }
 
 form {
@@ -86,9 +97,10 @@ input {
 }
 
 @media only screen and (orientation: portrait) {
-    main {
+    .Testa main {
         flex-direction: column;
         align-items: center;
+        gap: 5em;
         padding-bottom: 2em;
     }
 

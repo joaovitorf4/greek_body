@@ -1,5 +1,6 @@
 import './Testa.css';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import { calculateMaxWeight, calculateArmsCalves, calculateChest, calculateLegs, calculateShoulder, calculateFFMI, calculateFFMINormalized } from './formulas';
 
 function Testa() {
@@ -121,11 +122,11 @@ function Testa() {
           <h1>Results</h1>
           <div className='your-results'>
             <div className="data-result">
-              <h2>FFMI</h2>
+              <h2>FFMI </h2>
               <h3>{submittedData ? `${(calculateFFMI(submittedData.weight, submittedData.height, submittedData.bodyFatPercentage)).toFixed(2)}` : ''}</h3>
             </div>
             <div className="data-result">
-              <h2>FFMI normalized</h2>
+              <h2>FFMI normalized </h2>
               <h3>{submittedData ? `${(calculateFFMINormalized(submittedData.weight, submittedData.height, submittedData.bodyFatPercentage)).toFixed(2)}` : ''}</h3>
             </div>
             <div className="data-result">
@@ -155,7 +156,8 @@ function Testa() {
           </div>
           <div className='other-results'>
             <h1>Compare with others</h1>
-            <button type="submit" className="btn-result">More Results</button>
+            {/* <button type="submit" className="btn-result">More Results</button> */}
+            <button type="submit" className="btn-result"><Link to="/moreResults">More Results</Link></button>
           </div>
         </div>
         

@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Main from './Main';
-import Testa from './Testa';
+import Result from './Result';
 import Header from './Header';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MoreResults from './MoreResults';
+import Login from './Login';
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -15,8 +16,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/testa" element={<Testa />} />
+        <Route path="/result" element={<Result />} />
         <Route path="/moreResults" element={<MoreResults />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   </React.StrictMode>

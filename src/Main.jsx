@@ -8,7 +8,7 @@ function Main() {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate('/testa');
+    navigate('/result');
   };
 
   const [imageSrc, setImageSrc] = useState('./imgs/svgviewer-png-output.png');

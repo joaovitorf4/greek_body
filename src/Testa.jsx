@@ -72,7 +72,7 @@ function Testa() {
                   value={formData.bodyFatPercentage}
                   onChange={handleChange}
                   required
-                  placeholder="Ex: 84"
+                  placeholder="Ex: 20"
                 />
               </div>
               <div>

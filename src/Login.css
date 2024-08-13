@@ -1,0 +1,44 @@
+.Login {
+    height: 92vh;
+}
+
+.Login main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+}
+
+.Login a {
+    text-decoration: none;
+    color: black;
+}
+
+.Login strong {
+    color: #000;
+    font-weight: 800;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4em;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+@media only screen and (orientation: portrait) {
+    .Login main {
+        flex-direction: column;
+        align-items: center;
+        gap: 5em;
+        padding-bottom: 2em;
+    }
+}

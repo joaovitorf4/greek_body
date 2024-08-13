@@ -1,9 +1,9 @@
-import './Testa.css';
+import './Result.css';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { calculateMaxWeight, calculateArmsCalves, calculateChest, calculateLegs, calculateShoulder, calculateFFMI, calculateFFMINormalized } from './formulas';
 
-function Testa() {
+function Result() {
   const [formData, setFormData] = useState({
     height: '',
     weight: '',
@@ -30,7 +30,7 @@ function Testa() {
   };
 
   return (
-    <div className='Testa'>
+    <div className='Result'>
       <main>
         <div className="inputs">
           <form onSubmit={handleSubmit}>
@@ -166,4 +166,4 @@ function Testa() {
   );
 }
 
-export default Testa;
+export default Result;

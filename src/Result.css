@@ -1,4 +1,4 @@
-.Testa main {
+.Result main {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -56,13 +56,13 @@
     gap: 2em;
 }
 
-.Testa a {
+.Result a {
     text-decoration: none;
     color: black;
     transition: background-color 0.5s, color 0.5s;
   }
   
-.Testa a:hover {
+.Result a:hover {
     color: white;
 }
 
@@ -97,7 +97,7 @@ input {
 }
 
 @media only screen and (orientation: portrait) {
-    .Testa main {
+    .Result main {
         flex-direction: column;
         align-items: center;
         gap: 5em;

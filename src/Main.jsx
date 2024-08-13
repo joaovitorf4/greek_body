@@ -37,7 +37,7 @@ function Main() {
   return (
     <div className="Main">
       <main>
-          <img src={imageSrc} alt="davi" />
+          <img className='main-img' src={imageSrc} alt="davi" />
         <div className='start'>
             <div className="description">
               <h1>Archive the Greek</h1>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 
-/* .class-img {
+/* .class-.main-img {
   height: 92vh;
   width: 616px;
 } */
@@ -32,7 +32,6 @@
 
 .Main main {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 4em;
 }
@@ -43,7 +42,7 @@ html, body {
   padding: 0;
 }
 
-img {
+.main-img {
   z-index: -1;
   /* position: fixed; */
   bottom: 999;
@@ -78,7 +77,7 @@ strong {
 }
 
 @media screen and (max-aspect-ratio: 14/9) {
-  img {
+  .main-img {
     position: relative;
     border-radius: 100%;
   }
@@ -91,7 +90,7 @@ strong {
     padding-top: 4em;
   }
 
-  img {
+  .main-img {
     height: 40vh;
     width: none;
   }
